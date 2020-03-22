@@ -8,9 +8,9 @@
         
     }
 
-    .logo-brand{
-        width: 100px !important;
-        height: 100x !important;  
+    .navbar-brand{
+        width: auto !important;
+        height: auto !important;  
         padding-left: 20px ;
     }    
     
@@ -35,12 +35,16 @@
         border: #ce3b3b 1px solid;
     }       
 
-    .d-block .img-fluid{
-        width: 580px !important;
-        height: 2440x !important; 
-    }
-
     .articulos-brand{
         padding-left: 30px ;
     }
+
+    #img-slider{
+        height: 500px;
+        width: 1350px;
+    }
+
+
+
+  
     

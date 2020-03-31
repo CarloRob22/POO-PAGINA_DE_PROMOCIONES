@@ -32,11 +32,11 @@ var arreglo=[
 ]
 
 function mostrarPromo(){
-    document.getElementById("div-hogar").innerHTML = '';
-    for(let i=0;i<arreglo.length;i++){
+// document.getElementById("div-hogar").innerHTML = '';
+    for(let i=0;arreglo.length;i++){
         document.getElementById("div-hogar").innerHTML += 
-            `<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="card">
+            `<div style="margin:5px;" class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card" >
                     <img src="${arreglo[i].img}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${arreglo[i].titulo}</h5>
@@ -45,7 +45,6 @@ function mostrarPromo(){
                     </div>
                 </div>
             </div>`;
-
     console.log(arreglo);
     }
 }

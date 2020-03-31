@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">     
-    <link rel="stylesheet" href="js/bootstrap.min.js">  
+    <link rel="stylesheet" href="../css/bootstrap.min.css">     
+    <link rel="stylesheet" href="../js/bootstrap.min.js">  
     <title>Promo Activa</title>
     <style>
 
@@ -20,7 +20,7 @@
       }
 
       div{
-          background-color:#eaeae9 !important;
+          background-color:#eaeae9;
           
       }    
       
@@ -119,7 +119,11 @@
       #id-ingresar-outline{
         color: #eaeae9;
           border-color: #eaeae9;
-          background-color: #ce3b3b; 
+          background-color: rgb(206, 59, 59); 
+      }
+
+      .div-hogar, .row{
+        margin: 10px;
       }
 
     </style>
@@ -128,7 +132,7 @@
     <div>
         <nav class="navbar navbar-light bg-light">    
           <div >
-            <a><img src="img\logo.jpg" class ="logo-img" alt="logo" style="width: 120px; height: 90px;"> </a>
+            <a><img src="../img/logo.jpg" class ="logo-img" alt="logo" style="width: 120px; height: 90px;"> </a>
           </div>
           <div >
             <form class="form-inline">                
@@ -136,7 +140,7 @@
             </form>
           </div>
           <div id="id-redes" >
-            <p style="color: #ce3b3b; font-size: 1rem; width: 135px; ">Siguenos<a ><img class="redes" src="img/facebook.jpg" alt="fc"></a><a ><img class="redes" src="img/twetter.jpg" alt="tw"></a></p>          
+            <p style="color: #ce3b3b; font-size: 1rem; width: 135px; ">Siguenos<a ><img class="redes" src="../img/facebook.jpg" alt="fc"></a><a ><img class="redes" src="../img/twetter.jpg" alt="tw"></a></p>          
           </div>
           <div>
             <form class="form-inline">
@@ -159,13 +163,13 @@
     <div id="myslider" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="img-slide1" src="img/slider-1.jpg" alt="First slide" >
+          <img class="img-slide1" src="../img/slider-1.jpg" alt="First slide" >
         </div>
         <div class="carousel-item">
-          <img class="img-slide1" src="img/slider-2.jpg" alt="Second slide" >
+          <img class="img-slide1" src="../img/slider-2.jpg" alt="Second slide" >
         </div>
         <div class="carousel-item">
-          <img class="img-slide1" src="img/slider-3.jpg" alt="Third slide" >
+          <img class="img-slide1" src="../img/slider-3.jpg" alt="Third slide" >
         </div> 
       </div>
       <a class="carousel-control-prev" href="#myslider" role="button" data-slide="prev">
@@ -186,17 +190,17 @@
     </div> 
   </div>
   <div class="container-fluid">
-    <div id="div-Hogar" class="row">
+    <div id="div-hogar" class="div-hogar row">
       
     </div>    
   </div>
     
   
 
-    
+<script src="js/controlador.js"></script>    
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script> 
-<script src="js/controlador.js"></script>
+
 </body>
 </html>

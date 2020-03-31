@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cliente</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">     
+    <link rel="stylesheet" href="../js/bootstrap.min.js">
+    <style>
+        *{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .div-principal{
+            background-color: #eaeae9;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-right: 350px;
+            padding-left: 350px;
+            
+        }
+
+        .div-secundario{
+            padding: 0px;
+        }
+
+        .formulario{
+            border: #ce3b3b 3px solid;
+            padding: 15px;
+        }
+
+        .p-title{
+            font-size: 17px;
+            color:#eaeae9;
+            background-color: #ce3b3b;
+            padding-top: 10px ;
+            padding-bottom: 10px;
+            margin: 0px !important;
+        }
+    </style>  
+</head>
+<body>
+    <div class="div-principal">
+        <p align="center" class="p-title">REGISTRARSE EN PROMO ACTIVA</p>
+        <form class="formulario">            
+            <div class="container-fluid div-secundario">
+                <div class="row">
+                    <div class="col-6">
+                        <p>correo: </p> 
+                        <input type="text" name="correo" id="id-correo" placeholder="correo cliente"> <br>
+                        <p>contraseña: </p> 
+                        <input type="text" name="contraseña" id="id-contraseña" placeholder="contraseña"><br>
+                        <p>Requisitos minimos:
+                            -8 caracteres
+                            -Una letra mayuscúla
+                            -Una letra minuscúla
+                            -Un número
+                            -Un caracter especial válido @ # % * / ()
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p>Nombre y apellidos</p>                        
+                        <input type="text" name="Nombre" id="id-nombre">
+                        <p>Número de Identificacion</p>
+                        <input type="text" name="id" id="id-identidad">
+                        <p>Fecha de Nacimiento</p>
+                        <input type="date" name="fecha" id="id-fecha"><br>
+                        <input type="radio" name="femenino" id="id-femenino"> femenino <br>
+                        <input type="radio" name="masculino" id="id-masculino"> masculino <br>
+                        <p>Número de Telefono</p>
+                        <input type="text" name="telefono" id="id-telefono">
+                        <div class="container-fluid"> 
+                            <div class="row">
+                                <div class="col-6">
+                                    <select name="Pais" id="id-pais"> 
+                                        <option value="pais" disabled selected>Pais</option>
+                                        <option value="Honduras">Honduras</option>
+                                        <option value="ElSalvador">El Salvador</option>
+                                        <option value="Guatemala">Guatemala</option>                                    
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <select name="Departamento" id="id-departamento" >
+                                        <option value="provincia" selected disabled>provincia</option>
+                                    </select>
+                                </div>                                
+                            </div>
+                        </div><br>
+                    </div>                   
+                </div>
+            </div> 
+            <br>           
+            <input type="checkbox" name="informacion" id="id-informacion"> Deseo suscribirme para recibir información y ofertas a mi correo. 
+            <br>
+            <input type="checkbox" name="terminos" id="id-terminos"> He leído  y acepto los términos y condiciones. 
+            <br>
+            <div align="center"><button class="btn" type="submit">Registrarse</button></div>
+            
+        </form>
+    </div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>        
+</body>
+</html>

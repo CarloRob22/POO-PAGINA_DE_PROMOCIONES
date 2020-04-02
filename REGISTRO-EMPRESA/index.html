@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Cliente</title>
+    <title>Afiliacion de Empresa</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">     
     <link rel="stylesheet" href="../js/bootstrap.min.js">
     <style>
@@ -15,8 +15,8 @@
             background-color: #eaeae9;
             padding-top: 50px;
             padding-bottom: 50px;
-            padding-right: 350px;
-            padding-left: 350px;
+            padding-right: 280px;
+            padding-left: 280px;
             
         }
 
@@ -63,15 +63,19 @@
 </head>
 <body>
     <div class="div-principal">
-        <p align="center" class="p-title">REGISTRARSE EN PROMO ACTIVA</p>
+        <p align="center" class="p-title">AFILIACION EN PROMO ACTIVA</p>
         <form class="formulario">            
             <div class="container-fluid div-secundario">
                 <div class="row">
                     <div class="col-6">
-                        <p>Correo Electrónico: </p> 
-                        <input type="text" name="correo" id="id-correo"> <br>
+                        <p>Nombre de la empresa: </p> 
+                        <input type="text" name="nombre" id="id-nombre"> <br>
+                        <p>Correo electronico: </p> 
+                        <input type="text" name="correo" id="id-correo" ><br>
                         <p>Contraseña: </p> 
-                        <input type="text" name="contraseña" id="id-contraseña" ><br>
+                        <input type="password" name="contraseña" id="id-contraseña" ><br>
+                        <p>Confirme contraseña: </p> 
+                        <input type="password" name="confirmacion-contraseña" id="id-confirmacion-contraseña" ><br>
                         <p>Requisitos minimos:</p>
                         <ul>                        
                             <li>8 caracteres</li>
@@ -82,16 +86,15 @@
                         </ul>                        
                     </div>
                     <div class="col-6">
-                        <p>Nombre y apellidos</p>                        
-                        <input type="text" name="Nombre" id="id-nombre">
-                        <p>Número de Identificacion</p>
-                        <input type="text" name="id" id="id-identidad">
-                        <p>Fecha de Nacimiento</p>
-                        <input type="date" name="fecha" id="id-fecha"><br>
-                        <input type="radio" name="femenino" id="id-femenino"> femenino 
-                        <input style="margin-left: 10px;" type="radio" name="masculino" id="id-masculino"> masculino <br>
-                        <p>Número de Telefono</p>
-                        <input type="text" name="telefono" id="id-telefono">
+                        <p>RTN de la empresa</p>                        
+                        <input type="text" name="rtn-empresa" id="id-rtn-empresa">
+                        <p>Número fijo de contacto Administrativo:</p>
+                        <input type="text" name="numero-fijo" id="id-numero-fijo">
+                        <p>Número alternativo de contacto Administrativo:</p>
+                        <input type="text" name="numero-alter" id="id-numero-alter">
+                        <p>Aniversario de la empresa</p>
+                        <input type="date" name="aniversario" id="id-aniversario"><br>
+                        
                         <div class="container-fluid"> 
                             <div class="row">
                                 <div style="padding-left: 0px;" class="col-6">
@@ -108,13 +111,25 @@
                                     </select>
                                 </div>                                
                             </div>
+                            <div class="row">
+                                <div style="padding-left: 0px;" class="col-6">
+                                    <select name="Ciudad" id="id-Ciudad"> 
+                                        <option value="Ciudad" disabled selected>Pais</option>
+                                        <option value="Honduras">Honduras</option>
+                                        <option value="ElSalvador">El Salvador</option>
+                                        <option value="Guatemala">Guatemala</option>                                    
+                                    </select>
+                                </div>
+                                <div style="padding-left: 0px;" class="col-6">
+                                   <input type="text" name="codigo-postal" id="id-postal">
+                                </div> 
+                            </div>
                         </div><br>
                     </div>                   
                 </div>
             </div> 
                      
-            <input type="checkbox" name="informacion" id="id-informacion"> Deseo suscribirme para recibir información y ofertas a mi correo. 
-            <br>
+            
             <input style="margin-bottom: 15px;" type="checkbox" name="terminos" id="id-terminos"> He leído  y acepto los términos y condiciones. 
             <br>
             <div align="center"><button class="btn" type="submit">Registrarse</button></div>

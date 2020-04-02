@@ -78,7 +78,7 @@ paises =[
 
 function pais(pais){
     if (pais==paises[0].pais){        
-        for (let i=0;i<paises[0].departamentos.length;i++){
+        for (let i=0;i<;i++){
 
         }
         ``

@@ -1,0 +1,67 @@
+    body{
+        background-color: #eaeae9 !important;
+        
+    }
+
+    div{
+        background-color:#eaeae9 !important;
+        
+    }    
+    
+    .form-inline{
+        margin-right: 50px;
+    }        
+    
+    .btn-outline{
+        color: #eaeae9;
+        border-color: #eaeae9;
+        background-color: #ce3b3b;   
+    }
+
+    .btn{
+        color: #eaeae9;
+        border-color: #eaeae9;
+        background-color: #ce3b3b;         
+    }  
+    
+    .navbar {
+        background-color:#eaeae9 !important ;
+        border: #ce3b3b 1px solid;
+    }       
+
+    .articulos-brand{
+        padding-left: 30px ;
+    }
+    
+    .title-h1{
+        color: #ce3b3b;
+    }
+
+    .img-slide1{
+        height: 500px; 
+        width: 1350px;
+    }
+
+    .img-slide2{
+        height: 250px; 
+        width: 675px;
+    }
+
+    .div-a{
+        border: #ce3b3b 1px solid !important;
+        margin: 1px !important;
+        padding-left: 1px;        
+        padding-right: 1px;
+        padding-top: 1px;
+    }
+
+    .title-h2{
+        font-size: 5px !important;
+    }
+
+    
+
+
+
+  
+    

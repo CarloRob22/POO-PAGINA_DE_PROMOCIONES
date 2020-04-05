@@ -97,15 +97,13 @@
                                 <div style="padding-left: 0px;" class="col-6">
                                     <select name="Pais" id="id-pais"> 
                                         <option value="pais" disabled selected>Pais</option>
-                                        <option value="Honduras">Honduras</option>
+                                        <option value="Honduras" onclick="pais('Honduras')">Honduras</option>
                                         <option value="ElSalvador">El Salvador</option>
                                         <option value="Guatemala">Guatemala</option>                                    
                                     </select>
                                 </div>
-                                <div style="padding-left: 0px;" class="col-6">
-                                    <select name="Departamento" id="id-departamento" >
-                                        <option value="provincia" selected disabled>provincia</option>
-                                    </select>
+                                <div id="id-departamento" style="padding-left: 0px;" class="col-6">
+                                    
                                 </div>                                
                             </div>
                         </div><br>
@@ -121,6 +119,7 @@
             
         </form>
     </div>
+<script src="js/controlador.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>        

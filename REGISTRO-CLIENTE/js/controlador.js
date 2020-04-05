@@ -1,9 +1,29 @@
 var paises = [];
+var departamentos = [
+    'Atlántida',
+    'Choluteca',
+    'Colón',
+    'Comayagua', 
+    'Copán', 
+    'Cortes',
+    'El_Paraíso',
+    'Francisco Morazán',
+    'Gracias a Dios',
+    'Intibucá',
+    'Islas de la Bahía', 
+    'La Paz',
+    'Lempira', 
+    'Ocotepeque', 
+    'Olancho', 
+    'Santa Bárbara', 
+    'Valle', 
+    'Yoro'
+];
+
 paises =[
     {
         pais:'Honduras',
-        departamentos:
-        [
+        departamentos:        [
             'Atlántida',
             'Choluteca',
             'Colón',
@@ -77,10 +97,16 @@ paises =[
 ];
 
 function pais(pais){
-    if (pais==paises[0].pais){        
-        for (let i=0;i<;i++){
-
+    if (pais==Honduras){        
+        for (let i=0;i<departamentos.length;i++){
+            document.getElementById("id-departamento").innerHTML+=
+            `<select name="Departamento"  >
+                 <option value="provincia" selected disabled>provincia</option>
+                 <option value="${departamentos[i]}">${departamentos[i]}</option>
+            </select>`;
         }
-        ``
+        console.log(departamentos);
     }
 }
+
+pais(Honduras);
